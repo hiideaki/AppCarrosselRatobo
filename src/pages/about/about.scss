@@ -2,13 +2,26 @@ page-about {
   font-family: 'Verdana';
 }
 
-img {
-  width: 40vw;
+#logo {
+  width: 50vw;
+  height: 60vw;
+  left: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#profile {
+  width: 50vw;
   height: 50vw;
   left: 50%;
   margin-left: auto;
   margin-right: auto;
   display: block;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 10px solid #ccc;
 }
 
 h1, h3 {
@@ -25,4 +38,9 @@ h6 {
 p {
   margin-top: 5px;
   text-align: justify;
+}
+
+p, li {
+  font-family: 'Verdana';
+  font-size: 11px;
 }
