@@ -12,25 +12,25 @@
   <h6 id="projeto">Projeto Ratobô</h6>
   <ion-list>
     <ion-item>
-      <ion-range min="0" max="3" step="1" snaps="true" name="speed" [(ngModel)]="speed" color="dark">
+      <ion-range min="0" max="3" step="1" snaps="true" name="speed" [(ngModel)]="speed" color="dark" (ionChange)="mudaVelocidade()">
         <ion-icon range-left ios="ios-speedometer" md="ios-speedometer-outline" class="rangeL"></ion-icon>
       </ion-range>
     </ion-item>
 
     <ion-item>
-      <ion-range min="0" max="3" step="1" snaps="true" name="colorR" [(ngModel)]="ledc[0]" color="danger">
+      <ion-range min="0" max="3" step="1" snaps="true" name="colorR" [(ngModel)]="ledc[0]" color="danger" (ionChange)="mudaLed(0)">
         <ion-label range-left class="rangeL">R</ion-label>
       </ion-range>
     </ion-item>
 
     <ion-item>
-      <ion-range min="0" max="3" step="1" snaps="true" name="colorR" [(ngModel)]="ledc[1]" color="secondary">
+      <ion-range min="0" max="3" step="1" snaps="true" name="colorR" [(ngModel)]="ledc[1]" color="secondary" (ionChange)="mudaLed(1)">
         <ion-label range-left class="rangeL">G</ion-label>
       </ion-range>
     </ion-item>
 
     <ion-item>
-      <ion-range min="0" max="3" step="1" snaps="true" name="colorR" [(ngModel)]="ledc[2]" color="default">
+      <ion-range min="0" max="3" step="1" snaps="true" name="colorR" [(ngModel)]="ledc[2]" color="default" (ionChange)="mudaLed(2)">
         <ion-label range-left class="rangeL">B</ion-label>
       </ion-range>
     </ion-item>
