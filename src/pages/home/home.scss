@@ -10,20 +10,19 @@ page-home {
   width: 40px;
 }
 
-#r {
+.btndir {
+  margin: 3%;
   font-size: 30px;
-  margin-right: 20px;
-  color: #ff0000;
 }
 
-#g {
-  font-size: 30px;
-  margin-right: 20px;
-  color: #00ff00;
-}
-
-#b {
-  font-size: 30px;
-  margin-right: 20px;
-  color: #0000ff;
+.modulos {
+  font-family: "Century Gothic";
+  text-align: center;
+  border-bottom: 1px solid black;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+	margin-bottom: 5px;
+	margin-top: 5px;
+  font-size: 20px;
 }

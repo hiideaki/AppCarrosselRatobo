@@ -38,5 +38,9 @@ export class HomePage {
     this.sendByte();
   }
 
+  public teste(i: number) {
+    console.log("FOI " + i);
+  }
+
 
 }

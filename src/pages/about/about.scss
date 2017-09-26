@@ -23,8 +23,20 @@ page-about {
   margin-bottom: 10px;
 }
 
+.nomes {
+  font-family: "Century Gothic";
+  text-align: center;
+  border-top: 1px solid black;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+	margin-bottom: 30px;
+	margin-top: 5px;
+  font-size: 20px;
+}
+
 h1, h3 {
-  font-family: 'Century Gothic';
+  font-family: "Century Gothic";
   border-bottom: 1px solid black;
   margin-bottom: 0;
 }
