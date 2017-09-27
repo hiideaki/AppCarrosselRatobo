@@ -11,6 +11,12 @@
   <h1 id="titulo">Carrossel Caipira</h1>
   <h6 id="projeto">Projeto Ratobô</h6>
   <br>
+  <div text-center>
+    <button ion-button large round outline class="conectar" (click)="connectModule()">
+      Adicionar conexão
+    </button>
+  </div>
+
   <p class="modulos">LED</p>
   <ion-item>
     <ion-range min="0" max="3" step="1" snaps="true" name="colorR" [(ngModel)]="ledc[0]" color="danger" (ionChange)="mudaLed(0)">
@@ -31,7 +37,7 @@
   <br><br>
   <p class="modulos">VELOCIDADE</p>
   <ion-item>
-    <ion-range min="0" max="3" step="1" snaps="true" name="speed" [(ngModel)]="speed" color="dark" (ionChange)="mudaVelocidade()">
+    <ion-range min="0" max="3" step="1" snaps="true" name="speed" [(ngModel)]="speed" color="dark" (ionChange)="mudaVelocidade(0)">
       <ion-icon range-left ios="ios-speedometer" md="ios-speedometer-outline" class="rangeL"></ion-icon>
     </ion-range>
   </ion-item>
@@ -39,15 +45,15 @@
   <br><br>
   <p class="modulos">DIREÇÃO</p>
   <div text-center>
-    <button ion-button large round outline class="btndir" (click)="teste(0)">
+    <button ion-button large round outline class="btndir" (click)="mudaVelocidade(1)">
        <ion-icon name="ios-arrow-back"></ion-icon>
     </button>
 
-    <button ion-button large round outline class="btndir" (click)="teste(1)">
+    <button ion-button large round outline class="btndir" (click)="mudaVelocidade(3)">
        <ion-icon name="ios-arrow-up"></ion-icon>
     </button>
 
-    <button ion-button large round outline class="btndir" (click)="teste(2)">
+    <button ion-button large round outline class="btndir" (click)="mudaVelocidade(2)">
        <ion-icon name="ios-arrow-forward"></ion-icon>
     </button>
   </div>
