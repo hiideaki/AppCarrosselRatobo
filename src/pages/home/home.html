@@ -8,41 +8,16 @@
 </ion-header>
 
 <ion-content padding>
-  <br> -->
   <div text-center>
     <button ion-button large round outline class="conectar" (click)="presentConfirm()">
       Adicionar conexão
     </button>
   </div>
-    
-<!--    Textarea criado para fins de depuração  -->
-    <textarea id="console" style="width: 100%; height: 250px"></textarea>
-    
-<!--    Não implementado no Arduino    -->
-<!--
-  <p class="modulos">LED</p>
-  <ion-item>
-    <ion-range min="0" max="3" step="1" snaps="true" name="colorR" [(ngModel)]="ledc[0]" color="danger" (ionChange)="mudaLed(0)">
-      <ion-label range-left class="rangeL">R</ion-label>
-    </ion-range>
-  </ion-item>
-  <ion-item>
-    <ion-range min="0" max="3" step="1" snaps="true" name="colorR" [(ngModel)]="ledc[1]" color="secondary" (ionChange)="mudaLed(1)">
-      <ion-label range-left class="rangeL">G</ion-label>
-    </ion-range>
-  </ion-item>
-  <ion-item>
-    <ion-range min="0" max="3" step="1" snaps="true" name="colorR" [(ngModel)]="ledc[2]" color="default" (ionChange)="mudaLed(2)">
-      <ion-label range-left class="rangeL">B</ion-label>
-    </ion-range>
-  </ion-item>
--->
-
-  <br>
+  
 
   <p class="modulos">DIREÇÃO</p>
   <div>
-    <div id='joystick' style="margin-top: 10px; left: calc(50% - 100px); width: 200px; height: 200px; position: relative">
+    <div id='joystick' style="margin-top: 100px; left: calc(50% - 100px); width: 200px; height: 200px; position: relative">
         <div class="zone static"></div>
     </div>
       
